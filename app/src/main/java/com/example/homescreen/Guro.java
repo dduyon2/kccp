@@ -18,6 +18,7 @@ public class Guro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+                intent2.setFlags(intent2.FLAG_ACTIVITY_SINGLE_TOP|intent2.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent2);
             }
         });
